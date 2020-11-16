@@ -29,7 +29,7 @@ This is the main page which contains search box that listens to input characters
 
 10- MockWebServer to simulate a real server api with the responses of a fake server
 
-10- Moshi to deserialize library to transform the JSON responses in objects
+11- Moshi to deserialize library to transform the JSON responses in objects
 
 
 ![search_main](https://user-images.githubusercontent.com/6572487/99261584-942fe580-2825-11eb-8522-190d527b48b9.jpg)
