@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Search Products Challenge</string>
+    <string name="search_products">Search Products</string>
+    <string name="start_search_products">Start Search Products</string>
+    <string name="search">Search</string>
+    <string name="search_error">Error when searching</string>
+    <string name="connection_error">Network is not available</string>
+    <string name="empty_result">No products found</string>
+    <string name="not_enough_characters">Product name must be at least 3 characters</string>
+    <string name="available_in_stock">%1$d available in the stock</string>
+    <string name="price">Price: %1$s</string>
+    <string name="next_day_delivery">Available for next day delivery</string>
+</resources>
