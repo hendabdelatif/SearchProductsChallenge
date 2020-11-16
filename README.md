@@ -2,7 +2,7 @@
 
 ### This is an application in Kotlin which represents an instance search within a list of products. The application contains one screen as described below.
 
-### Search Result Screen ###
+### Search Products Screen ###
 
 This is the main page which contains search box that listens to input characters instantly and return the filtered result in a list.
 
