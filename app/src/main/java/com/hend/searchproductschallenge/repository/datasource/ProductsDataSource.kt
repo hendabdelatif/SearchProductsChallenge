@@ -49,21 +49,7 @@ class ProductsDataSource(
                             e.printStackTrace()
                         }
                     }
-                    is ErrorResult -> {
-                        _searchResult.postValue(it)
-                    }
-                    is EndOfResult -> {
-                        _searchResult.postValue(it)
-                    }
-                    is EmptyResult -> {
-                        _searchResult.postValue(it)
-                    }
-                    is EmptyQuery -> {
-                        _searchResult.postValue(it)
-                    }
-                    is NetworkError -> {
-                        _searchResult.postValue(it)
-                    }
+                    else -> _searchResult.postValue(it)
                 }
             }
         }
@@ -88,21 +74,7 @@ class ProductsDataSource(
                             e.printStackTrace()
                         }
                     }
-                    is ErrorResult -> {
-                        _searchResult.postValue(it)
-                    }
-                    is EndOfResult -> {
-                        _searchResult.postValue(it)
-                    }
-                    is EmptyResult -> {
-                        _searchResult.postValue(it)
-                    }
-                    is EmptyQuery -> {
-                        _searchResult.postValue(it)
-                    }
-                    is NetworkError -> {
-                        _searchResult.postValue(it)
-                    }
+                    else -> _searchResult.postValue(it)
                 }
             }
         }
