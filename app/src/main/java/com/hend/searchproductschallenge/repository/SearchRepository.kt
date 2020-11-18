@@ -8,10 +8,7 @@ import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.FlowPreview
-import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.debounce
-import kotlinx.coroutines.flow.flowOn
-import kotlinx.coroutines.flow.mapLatest
+import kotlinx.coroutines.flow.*
 import javax.inject.Inject
 
 /**
@@ -23,7 +20,7 @@ class SearchRepository @Inject constructor(
     private val searchProductsService: SearchProductsService
 ) {
 
-    internal val queryChannel = MutableStateFlow("")
+    internal val queryChannel = MutableSharedFlow<String>()
 
     @FlowPreview
     @WorkerThread

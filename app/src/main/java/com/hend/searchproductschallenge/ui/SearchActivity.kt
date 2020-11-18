@@ -46,7 +46,7 @@ class SearchActivity : AppCompatActivity() {
             lifecycleScope.launch {
                 binding.progressBar.visibility = View.VISIBLE
                 binding.txtErrorMessage.visibility = View.GONE
-                viewModel.queryChannel.value = editable.toString()
+                viewModel.queryChannel.emit(editable.toString())
             }
         }
     }
